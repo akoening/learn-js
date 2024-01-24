@@ -2,10 +2,9 @@
     <head>
         <script>
             // change the script such that i=0,1,2,3,4 is logged in the console
-             {
-                // setTimeout executes the function after 5 ms
+             for (let i = 0; i < 5; i++) {
+                // setTimeout executes the function after 5 ms-- asynchronous function
                 setTimeout(function() {
-                for (var i = 0; i < 5; i++)
                     console.log(i);
                 }, 5);
             }
