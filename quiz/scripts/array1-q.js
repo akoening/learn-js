@@ -16,7 +16,9 @@ window.onload = function() {
 
               // loop through the sorted array, and display all the search terms in the list
               for (const itemText of myHistoryCopy) {
-                
+                const listItem = document.createElement('li');
+                listItem.textContent = inp.value;
+                list.appendChild(listItem);
               }
 
               // If the array length is 5 or more, remove the oldest search term

@@ -6,6 +6,8 @@ window.onload = function hideEmail() {
     const list = document.getElementById('emails')
     list.innerHTML = '';
     for (const email of emails) {
-        // complete the loop
+        if (email.match(/[A-Za-z0-9_]+\@[A-Za-z]\.northeastern\.edu/)) {
+            list.append([])
+        }
     }
 }
